@@ -1,0 +1,29 @@
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+h1   {text-align: center;}
+h1   {font-size: 300%;}
+
+p1   {color: Magenta;}
+p1  {text-align: center;}
+p1  {font-size: 150%;}
+
+
+</style>
+
+
+<h1>Users</h1>
+
+<p1><%= notice %></p1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+
+<%= link_to "New user", new_user_path %>

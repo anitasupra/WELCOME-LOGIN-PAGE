@@ -1,0 +1,20 @@
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+h1   {text-align: center;}
+h1   {font-size: 300%;}
+</style>
+
+
+
+
+<%= render @user %>
+
+<div>
+  <%= link_to "Edit this user", edit_user_path(@user) %> |
+  <%= link_to "Back to users", users_path %>
+
+  <%= button_to "Destroy this user", @user, method: :delete %>
+</div>
+
+<p style="color: green"><%= notice %></p>

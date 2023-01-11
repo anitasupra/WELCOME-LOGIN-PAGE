@@ -25,6 +25,7 @@ h5   {text-align: center;}
 h5  {font-size: 100%;}
 
 </style>
+
 <h1>WELCOME TO RUBY ON RAIL WEBSITE</h1>
 <h2>LOGIN PAGE</h2>
  <br />
@@ -32,7 +33,13 @@ h5  {font-size: 100%;}
  <br />
   <br />
 <h4><% if current_user %>
+
+
+<img src="https://www.linkpicture.com/q/WELCOME_2.png"width="500" height="300"/>
+ <br />
+ 
  Logged in as <%= current_user.email %></h4>
+ 
 
 <% else %>
  <%= link_to 'Sign Up', signup_path %> or
